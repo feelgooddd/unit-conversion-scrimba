@@ -1,4 +1,4 @@
-Using Vanille JS/HTML/CSS
+Using Vanilla JS/HTML/CSS
 No frameworks
 Solo project for an exercise on scrimba.
 
