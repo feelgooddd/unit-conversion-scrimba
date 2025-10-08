@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --clr-bg-conversion-section: #6943ff;
+  --clr-border: #b295ff;
+
+  --clr-bg-conversion-details: #f4f4f4;
+
+  --clr-txt-400: #3d3d3d;
+  --clr-txt-300: #5a537b;
+  --clr-txt-500: #353535;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 0.925rem;
+}
+/* Conversion Section */
+.conversion-section {
+  background-color: var(--clr-bg-conversion-section);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 15px 30px;
+}
+
+.conversion-section input {
+  width: 120px;
+  height: 85px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid var(--clr-border);
+  outline: 1px solid var(--clr-border);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 20px;
+}
+.conversion-section button {
+  width: 120px;
+  height: 42px;
+  background-color: #fff;
+  color: var(--clr-txt-400);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Conversion Details section */
+
+.conversion-details {
+  background-color: var(--clr-bg-conversion-details);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-inline: 50px;
+}
+
+.conversion-details .converted-card {
+  background-color: #fff;
+  padding: 20px 40px;
+  width: 100%;
+  margin-block: 20px;
+  display: grid;
+  justify-items: center;
+}
+
+.converted-card h3 {
+  color: var(--clr-txt-300);
+  text-align: center;
+}
+
+.converted-card p {
+  color: var(--clr-txt-500);
+  font-size: 0.835rem;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+.conversion-details{
+    padding-inline: 250px;
+}
+}
